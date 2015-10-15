@@ -49,13 +49,13 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server '147.175.149.143',
+server ENV['SUXESS_IP'],
   user: 'suxess',
   roles: %w{web} #,
-#   ssh_options: {
-#     user: 'user_name', # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
-#     forward_agent: false,
-#     auth_methods: %w(publickey password)
-#     # password: 'please use keys'
-#   }
+  # ssh_options: {
+    # user: 'user_name', # overrides user setting above
+    # keys: [ENV['CAP_PRIVATE_KEY']],
+    # forward_agent: false,
+    # auth_methods: %w(publickey password)
+    # password: 'please use keys'
+  # }

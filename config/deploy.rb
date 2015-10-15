@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'suxess-web'
-set :repo_url, 'https://github.com/pitr12/suxess-web-fiit.git'
+# set :repo_url, 'https://github.com/pitr12/suxess-web-fiit.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -11,7 +11,7 @@ set :repo_url, 'https://github.com/pitr12/suxess-web-fiit.git'
 set :deploy_to, '/srv/www/suxess-web'
 
 # Default value for :scm is :git
-set :scm, :git
+set :scm, :git_copy
 
 # Default value for :format is :pretty
 # set :format, :pretty
