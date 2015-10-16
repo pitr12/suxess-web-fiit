@@ -8,10 +8,14 @@ build:
 deploy:
   steps:
     - script:
-        name: install capistrano and capistrano-git-copy
-        code: |
-          gem install capistrano
-          gem install capistrano-git-copy
+        name: install capistrano
+        code: gem install capistrano
+
+    - add-to-known_hosts:
+        hostname: $SUXESS_IP
+
+    - add-ssh-key:
+        keyname: PRODUCTION_SSH_KEY
 
     - script:
         name: execute capistrano deploy

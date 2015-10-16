@@ -54,7 +54,7 @@ server ENV['SUXESS_IP'],
   roles: %w{web} #,
   # ssh_options: {
     # user: 'user_name', # overrides user setting above
-    # keys: [ENV['CAP_PRIVATE_KEY']],
+    # keys: [ENV['PRODUCTION_SSH_KEY_PRIVATE']],
     # forward_agent: false,
     # auth_methods: %w(publickey password)
     # password: 'please use keys'
