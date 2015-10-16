@@ -8,10 +8,8 @@ build:
 deploy:
   steps:
     - script:
-        name: install capistrano and capistrano-git-copy
-        code: |
-          gem install capistrano
-          gem install capistrano-git-copy
+        name: install capistrano
+        code: gem install capistrano
 
     - script:
         name: execute capistrano deploy
