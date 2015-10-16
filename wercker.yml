@@ -11,6 +11,12 @@ deploy:
         name: install capistrano
         code: gem install capistrano
 
+    - add-to_known_hosts:
+        hostname: $SUXESS_IP
+
+    - add-ssh-key:
+        keyname: PRODUCTION_SSH_KEY
+
     - script:
         name: execute capistrano deploy
         code: cap production deploy
