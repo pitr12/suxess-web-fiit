@@ -1,0 +1,22 @@
+box: ruby
+build:
+  steps:
+    - script:
+      name: Build ready
+      code: echo "Ready-to-roll"
+
+deploy:
+  steps:
+    - script:
+        name: install capistrano
+        code: gem install capistrano
+
+    - add-to-known_hosts:
+        hostname: $SUXESS_IP
+
+    - add-ssh-key:
+        keyname: PRODUCTION_SSH_KEY
+
+    - script:
+        name: execute capistrano deploy
+        code: cap production deploy
