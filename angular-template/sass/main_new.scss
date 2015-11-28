@@ -1,0 +1,27 @@
+//------------------------------------------------------------
+// This is main sass file. This file only imports all partials
+//------------------------------------------------------------
+@charset 'UTF-8';
+
+// Configurations - variables, mixins and functions
+@import 
+	'variables',
+	'mixins',
+	'functions';
+
+ // Vendors (external styles = not our code)
+@import
+  'vendor/normalize';
+
+// Base stuff
+@import
+  'base/base',
+  'base/helpers';
+
+// Layout-related sections (header, footer etc.)
+@import
+  'layout/header';
+
+// Components
+@import
+  'components/buttons';
