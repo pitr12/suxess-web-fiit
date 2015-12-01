@@ -357,11 +357,15 @@ th {
  * Set up a decent box model on the root element
  */
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
 
 body {
   color: #222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  width: 100%;
+  height: 100%; }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -376,11 +380,21 @@ body {
  * Basic styles for links
  */
 a {
-  color: #E50050;
+  color: #222;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #222;
-    text-decoration: underline; }
+    color: #22A7F0;
+    text-decoration: none; }
+
+#page-wrapper {
+  width: 100%;
+  height: 100%; }
+
+.brand-color {
+  color: #22A7F0; }
+
+.hide {
+  display: none; }
 
 /**
  * Clear inner floats
@@ -416,5 +430,85 @@ a {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.navbar {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 80px;
+  -webkit-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  background-color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+  height: 80px;
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+  line-height: 80px;
+  padding: 3px 30px 0 15px; }
+  .navbar-default .navbar-nav > li > a::first-letter {
+    color: #22A7F0; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+    color: #22A7F0;
+    text-decoration: none; }
+
+.logo {
+  margin-left: 55px;
+  margin-right: 100px;
+  padding-top: 3px;
+  font-size: 28px;
+  font-weight: 800; }
+
+.navbar-form {
+  padding: 0;
+  margin: 0; }
+
+.stylish-input-group .input-group-addon {
+  background: white; }
+.stylish-input-group .form-control {
+  border-right: 0;
+  box-shadow: 0 0 0;
+  border-color: #ccc; }
+.stylish-input-group button {
+  border: 0;
+  background: transparent; }
+
+.search {
+  width: 16%;
+  margin-top: 25px; }
+
+.navbar-profile {
+  height: 80px;
+  width: 270px; }
+  .navbar-profile img {
+    width: 64px;
+    height: 64px;
+    border-right: 5px solid #22A7F0; }
+  .navbar-profile-link {
+    line-height: 40px;
+    font-size: 15px;
+    margin: 0 0 0 10px;
+    font-weight: 500;
+    margin-bottom: -10px;
+    display: block; }
+  a.navbar-profile-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px; }
+    a.navbar-profile-name::first-letter {
+      color: #22A7F0; }
+  .navbar-profile-notification {
+    position: relative; }
+    .navbar-profile-notification-bubble {
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      /* This breaks the div from the normal HTML document. */
+      top: 25px;
+      right: -3px;
+      background-color: red;
+      /* you could use a background image if you'd like as well */
+      border-radius: 30px; }
 
 /*# sourceMappingURL=main_new.css.map */

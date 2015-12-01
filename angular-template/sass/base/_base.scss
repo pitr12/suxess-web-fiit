@@ -7,11 +7,13 @@
  */
 html {
   box-sizing: border-box;
+  @include fullsize;
 }
 
 body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
+  @include fullsize;
 }
 
 /**
@@ -28,11 +30,23 @@ body {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $text-color;
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+    color: $brand-color;
+    text-decoration: none;
   }
+}
+
+#page-wrapper{
+  @include fullsize;  
+}
+
+.brand-color{
+  color: $brand-color;
+}
+
+.hide{
+  display: none;
 }

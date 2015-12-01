@@ -2,11 +2,31 @@
 // This file contains all sass variables
 //--------------------------------------
 
+//global size scale
+$scale: 1.0;
+
 // Main text color
 $text-color: #222 !default;
 
 // Main brand color
-$brand-color: #E50050 !default;
+$brand-color: #22A7F0 !default;
+
+//link color
+$link-color: #000;
 
 // Regular font family
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+// Header
+$header-height: 80px * $scale;
+$header-item-font-size: 24px * $scale;
+$header-font-weight: 700;
+$navbar-profile-font-weight: 500;
+$navbar-profile-font-size: 15px * $scale;
+$logo-size: 28px * $scale;
+$logo-font-weight: 800;
+$header-bg-color: #fff; 
+$header-shadow: 0px 3px 10px -2px rgba(0,0,0,0.2);
+$search-size: 16% * $scale;
+$profile-name-font-size: 20px * $scale;
+$navbar-profile-width: 270px * $scale;
