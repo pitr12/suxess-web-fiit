@@ -32,10 +32,9 @@
 
 
 .logo{
-	margin-left: 55px;
-	margin-right: 100px;
-	padding-top: 3px;
-	font-size: $logo-size;
+	width: $sidebar-open-width;
+	padding-left: 73px;
+	font-size: $logo-font-size;
 	font-weight: $logo-font-weight;
 }
 
@@ -95,10 +94,10 @@
     	&-bubble{
     		width: 12px * $scale;
     		height: 12px * $scale;
-		    position:absolute;    /* This breaks the div from the normal HTML document. */
+		    position:absolute; 
 		    top: 25px * $scale;
 		    right: -3px / $scale;
-		    background-color:red; /* you could use a background image if you'd like as well */
+		    background-color:red;
 		    border-radius:30px * $scale;
     	}
     }

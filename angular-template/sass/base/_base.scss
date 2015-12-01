@@ -14,6 +14,7 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
   @include fullsize;
+  background-color: $main-background-color; 
 }
 
 /**
@@ -41,6 +42,25 @@ a {
 
 #page-wrapper{
   @include fullsize;  
+}
+
+#main-wrapper{
+  @include fullsize;
+  padding-top: $header-height;
+  padding-left: $sidebar-closed-width;
+  transition: all .4s ease 0s;
+  &.open{
+    padding-left: $sidebar-open-width;
+  }
+}
+
+#content-wrapper{
+  height: 100%;
+  padding: 10px 0 0 10px;
+}
+
+#main-wrapper.open #sidebar-wrapper {
+    left: ($sidebar-open-width - $sidebar-closed-width);
 }
 
 .brand-color{

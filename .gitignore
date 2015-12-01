@@ -1,4 +1,4 @@
 /_builds/
 /_projects/
 /_steps/
-/angular-template/.sass-cache/
+**/.sass-cache/*
