@@ -44,13 +44,21 @@ a {
   @include fullsize;  
 }
 
+#body-wrapper{
+  @include fullsize;
+  padding-top: $header-height; 
+}
+
 #main-wrapper{
   @include fullsize;
-  padding-top: $header-height;
-  padding-left: $sidebar-closed-width;
+  padding-left: 0px;
+  padding-top: $header-height; 
   transition: all .4s ease 0s;
   &.open{
     padding-left: $sidebar-open-width;
+  }
+  &.closed{
+    padding-left: $sidebar-closed-width;
   }
 }
 
