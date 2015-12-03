@@ -11,6 +11,8 @@ $blue-darken: #2980b9;
 $green: #1BBC9B;
 $bluewood: #34495E;
 $alice-blue: #E4F1FE;
+$red: #e74c3c;
+$red-darken: #C0392B;
 
 
 
@@ -29,6 +31,12 @@ $link-hover-color: $green;
 // Regular font family
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
+/**
+* Buttons
+*/
+$btn-font-size: 16px;
+$btn-font-weight: 400;
+$btn-icon-size: 20px;
 /**
 * Header
 */
@@ -65,3 +73,4 @@ $sidebar-closed-width: 70px * $scale;
 $breadcrumbs-background: $blue;
 $breadcrumbs-background-even: $blue-darken;
 $breadcrumbs-background-hover: $green;
+$breadcrumbs-height: 36px;

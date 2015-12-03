@@ -2,6 +2,15 @@
 // This file contains all styles related to website sidebar
 //--------------------------------------------------------
 
+#main-wrapper.open {
+	#sidebar-wrapper {
+    	left: ($sidebar-open-width - $sidebar-closed-width);
+	}
+	.menu{
+	
+	}
+}
+
 #sidebar-wrapper{
   width: $sidebar-open-width;
   height: 100%;
@@ -11,4 +20,49 @@
   left: 0;
   background-color: $brand-color; 
   transition: all .4s ease 0s;
+}
+
+.menu{
+	padding-top: 20px;
+	&-new-btn{
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		font-size: 18px;
+		font-weight: 600;
+		i {
+			font-size: 28px;
+			line-height: 28px;
+		}
+	}
+	ul{
+		list-style-type: none;
+		font-size: 17pt;
+		margin: 0;
+	    padding: 0;
+	    li{
+			padding: 10px 20px; 
+			i{
+				float: right;
+				color: white;
+				font-size: 25px;
+			}
+			@include on-event{
+				background-color: $blue-darken;
+				i, a{
+					color: $green;
+				}
+			}
+			a{
+				outline: 0;
+				display: block;
+			}
+			&.active{
+				background-color: $blue-darken;
+				i, a{
+					color: $green;
+				}
+			}
+	    }
+	}
 }

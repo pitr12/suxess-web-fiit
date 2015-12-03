@@ -18,12 +18,12 @@
   'base/base',
   'base/helpers';
 
-// Layout-related sections (header, footer etc.)
-@import
-  'layout/header',
-  'layout/sidebar';
-
 // Components
 @import
   'components/buttons',
   'components/breadcrumbs';
+
+// Layout-related sections (header, footer etc.)
+@import
+  'layout/header',
+  'layout/sidebar';
