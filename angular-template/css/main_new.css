@@ -4,6 +4,9 @@
 /** 
 * Sidebar 
 */
+/** 
+* Breadcrumbs 
+*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -387,10 +390,10 @@ body {
  * Basic styles for links
  */
 a {
-  color: #222;
+  color: #fff;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #22A7F0;
+    color: #1BBC9B;
     text-decoration: none; }
 
 #page-wrapper {
@@ -414,8 +417,7 @@ a {
     padding-left: 70px; }
 
 #content-wrapper {
-  height: 100%;
-  padding: 10px 0 0 10px; }
+  height: 100%; }
 
 #main-wrapper.open #sidebar-wrapper {
   left: 180px; }
@@ -468,19 +470,20 @@ a {
   -webkit-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
-  background-color: #fff; }
+  background-color: #34495E;
+  border: none; }
 
 .navbar-default .navbar-nav > li > a {
   height: 80px;
   font-size: 24px;
-  color: #000;
+  color: #fff;
   font-weight: 700;
   line-height: 80px;
   padding: 3px 30px 0 15px; }
   .navbar-default .navbar-nav > li > a::first-letter {
     color: #22A7F0; }
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-    color: #22A7F0;
+    color: #1BBC9B;
     text-decoration: none; }
 
 .logo {
@@ -545,8 +548,68 @@ a {
   margin-left: -180px;
   position: fixed;
   left: 0;
-  border-right: 1.5px solid #ececec;
   background-color: #22A7F0;
   transition: all .4s ease 0s; }
+
+#breadcrumb {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0px; }
+  #breadcrumb .icon {
+    font-size: 14px; }
+  #breadcrumb li {
+    float: left; }
+    #breadcrumb li a {
+      color: #FFF;
+      display: block;
+      background: #22A7F0;
+      text-decoration: none;
+      position: relative;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px 0 5px;
+      text-align: center;
+      margin-right: 23px;
+      outline: 0; }
+    #breadcrumb li:nth-child(even) a {
+      background-color: #2980b9; }
+      #breadcrumb li:nth-child(even) a:before {
+        border-color: #2980b9;
+        border-left-color: transparent; }
+      #breadcrumb li:nth-child(even) a:after {
+        border-left-color: #2980b9; }
+    #breadcrumb li:first-child a {
+      padding-left: 15px; }
+      #breadcrumb li:first-child a:before {
+        border: none; }
+    #breadcrumb li a:before, #breadcrumb li a:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      border: 0 solid #22A7F0;
+      border-width: 15px 10px;
+      width: 0;
+      height: 0; }
+    #breadcrumb li a:before {
+      left: -20px;
+      border-left-color: transparent; }
+    #breadcrumb li a:after {
+      left: 100%;
+      border-color: transparent;
+      border-left-color: #22A7F0; }
+    #breadcrumb li a:hover {
+      background-color: #1BBC9B; }
+      #breadcrumb li a:hover:before {
+        border-color: #1BBC9B;
+        border-left-color: transparent; }
+      #breadcrumb li a:hover:after {
+        border-left-color: #1BBC9B; }
+    #breadcrumb li a:active {
+      background-color: #1BBC9B; }
+      #breadcrumb li a:active:before {
+        border-color: #1BBC9B;
+        border-left-color: transparent; }
+      #breadcrumb li a:active:after {
+        border-left-color: #1BBC9B; }
 
 /*# sourceMappingURL=main_new.css.map */

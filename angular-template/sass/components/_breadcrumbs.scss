@@ -1,0 +1,95 @@
+//-------------------------------------------------
+// This file contains all styles related to breadcrumbs
+//-------------------------------------------------
+
+#breadcrumb{
+  list-style:none;
+  display: inline-block;
+  padding-left: 0px;
+  
+  .icon{
+    font-size: 14px;
+  }
+  
+  li{
+    float:left;
+    a{
+      color:#FFF;
+      display:block;
+      background: $breadcrumbs-background;
+      text-decoration: none;
+      position:relative;
+      height: 30px;
+      line-height:30px;
+      padding: 0 10px 0 5px;
+      text-align: center;
+      margin-right: 23px;
+      outline: 0;
+    }
+    &:nth-child(even){
+      a{
+        background-color: $breadcrumbs-background-even;
+        
+        &:before{
+          border-color:$breadcrumbs-background-even;
+          border-left-color:transparent;
+         }
+        &:after{
+          border-left-color:$breadcrumbs-background-even;
+        }
+      }
+    }
+    &:first-child{
+      a{
+        padding-left:15px;
+        &:before{
+          border:none;
+         }
+      }
+    }
+    
+    a{   
+      &:before,
+      &:after{
+        content: "";
+        position:absolute;
+        top: 0;
+        border:0 solid $breadcrumbs-background;
+        border-width:15px 10px;
+        width: 0;
+        height: 0;
+      }
+      &:before{
+        left:-20px;
+        border-left-color:transparent;
+      }
+      &:after{
+        left:100%;
+        border-color:transparent;
+        border-left-color: $breadcrumbs-background;
+      }
+      &:hover{
+        background-color: $breadcrumbs-background-hover;
+        
+        &:before{
+          border-color: $breadcrumbs-background-hover;
+          border-left-color:transparent;
+         }
+        &:after{
+          border-left-color: $breadcrumbs-background-hover;
+        }
+      }
+      &:active{
+        background-color: $breadcrumbs-background-hover;
+        
+        &:before{
+          border-color: $breadcrumbs-background-hover;
+          border-left-color:transparent;
+         }
+        &:after{
+          border-left-color: $breadcrumbs-background-hover;
+        }
+      }
+    }
+  }
+}

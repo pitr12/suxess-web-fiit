@@ -5,18 +5,27 @@
 //global size scale
 $scale: 1.0;
 
+//main colors - 
+$blue: #22A7F0;
+$blue-darken: #2980b9;
+$green: #1BBC9B;
+$bluewood: #34495E;
+$alice-blue: #E4F1FE;
+
+
+
 // Main text color
 $text-color: #222 !default;
 
 // Main brand color
-$brand-color: #22A7F0 !default;
+$brand-color: $blue !default;
 
 //Main background color
-$main-background-color: #E4F1FE !default;
+$main-background-color: $alice-blue !default;
 
 //link color
-$link-color: #000;
-
+$link-color: #fff;
+$link-hover-color: $green;
 // Regular font family
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
@@ -40,11 +49,19 @@ $navbar-profile-font-weight: 500;
 $logo-font-weight: 800;
 
 //header colors
-$header-bg-color: #fff; 
+$header-bg-color: $bluewood; 
 $header-shadow: 0px 3px 10px -2px rgba(0,0,0,0.2);
+$header-link-color: #fff;
 
 /** 
 * Sidebar 
 */
 $sidebar-open-width: 250px * $scale;
 $sidebar-closed-width: 70px * $scale;
+
+/** 
+* Breadcrumbs 
+*/
+$breadcrumbs-background: $blue;
+$breadcrumbs-background-even: $blue-darken;
+$breadcrumbs-background-hover: $green;

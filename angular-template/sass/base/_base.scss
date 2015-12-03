@@ -31,11 +31,11 @@ body {
  * Basic styles for links
  */
 a {
-  color: $text-color;
+  color: $link-color;
   text-decoration: none;
 
   @include on-event {
-    color: $brand-color;
+    color: $link-hover-color;
     text-decoration: none;
   }
 }
@@ -64,7 +64,6 @@ a {
 
 #content-wrapper{
   height: 100%;
-  padding: 10px 0 0 10px;
 }
 
 #main-wrapper.open #sidebar-wrapper {

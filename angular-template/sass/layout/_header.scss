@@ -10,13 +10,14 @@
 	-moz-box-shadow: $header-shadow;
 	box-shadow: $header-shadow;
 	background-color: $header-bg-color;
+	border: none;
 }
 
 .navbar-default{
 	.navbar-nav>li>a{
 	height: $header-height;
   font-size: $header-item-font-size;
-  color: $link-color;
+  color: $header-link-color;
   font-weight: $header-font-weight;
   line-height: $header-height;	
   padding: 3px 30px 0 15px;
@@ -24,7 +25,7 @@
   		color: $brand-color;
   	}
   	@include on-event {
-    color: $brand-color;
+    color: $link-hover-color;
     text-decoration: none;
   }
 	}
