@@ -7,7 +7,17 @@
     	left: ($sidebar-open-width - $sidebar-closed-width);
 	}
 	.menu{
-	
+		&-new-btn{
+			display: block;
+			float: none;
+				&-small{
+					display: none;
+				}
+		}
+		&-swap{
+			margin: 50px 0 0 100px;
+			float: none;
+	}
 	}
 }
 
@@ -23,17 +33,40 @@
 }
 
 .menu{
-	padding-top: 20px;
+	padding-top: 30px;
 	&-new-btn{
-		display: block;
-		margin: 0 auto;
-		margin-top: 20px;
+		display: none;
+		margin: 20px 0 0 70px;
 		font-size: 18px;
 		font-weight: 600;
+		float: left;
 		i {
 			font-size: 28px;
 			line-height: 28px;
 		}
+		&-small{
+			padding: 7px 7px 7px 7px;
+			font-weight: 600;
+			margin-left: auto;
+			margin-top: 20px;
+			margin-right: 14px;
+			display: block;
+			i {
+				font-size: 28px;
+				line-height: 28px;
+				margin: 0;
+			}
+		}
+	}
+	a{
+		outline: 0;
+	}
+	&-swap{
+		color: white;
+		font-size: 35px;
+		display: block;
+		margin: 50px 20px 0 0;
+		float: right;
 	}
 	ul{
 		list-style-type: none;
@@ -41,6 +74,7 @@
 		margin: 0;
 	    padding: 0;
 	    li{
+	    	border-right: 7px solid transparent;
 			padding: 10px 20px; 
 			i{
 				float: right;
@@ -54,11 +88,11 @@
 				}
 			}
 			a{
-				outline: 0;
 				display: block;
 			}
 			&.active{
 				background-color: $blue-darken;
+				border-right: 7px solid $green;
 				i, a{
 					color: $green;
 				}

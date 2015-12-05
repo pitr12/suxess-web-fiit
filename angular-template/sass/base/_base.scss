@@ -68,11 +68,7 @@ a {
 
 #main-content{
   @include fullsize;
-  padding-left: 10px;
-}
-
-#main-wrapper.open #sidebar-wrapper {
-    left: ($sidebar-open-width - $sidebar-closed-width);
+  padding: 0 20px 0 20px;
 }
 
 .brand-color{
@@ -81,4 +77,12 @@ a {
 
 .hide{
   display: none;
+}
+
+.row{
+  margin: 0;
+}
+
+hr{
+  border-color: black;
 }

@@ -2,11 +2,16 @@
 // This file contains all styles related to breadcrumbs
 //-------------------------------------------------
 
+.bredcrumbs-wrapper{
+  width: 100%;
+  height: $breadcrumbs-height;
+}
+
 #breadcrumb{
   list-style:none;
   display: inline-block;
   padding-left: 0px;
-  
+  position: fixed;
   .icon{
     font-size: 14px;
   }
